@@ -1,10 +1,10 @@
-Project: Predict H1N1 and Seasonal Flu Vaccines
+**Project: Predict H1N1 and Seasonal Flu Vaccines**
 
 
-Website: https://www.drivendata.org/competitions/66/flu-shot-learning/page/210/
+**Website:** https://www.drivendata.org/competitions/66/flu-shot-learning/page/210/
 
 
-Introduction
+**Introduction**
 
 This project is based on the competition Driven Data published related to H1N1 flu and the Seasonal one. It is about vaccination, a key public health measure used to fight infectious diseases. Vaccines provide immunization for individuals, and enough immunization in a community can further reduce the spread of diseases [1].
 
@@ -15,15 +15,14 @@ It is a very unusual the data set because it has two targets, one for H1N1 and o
 This document analyses the elements that, eventually affect patients who gets these kinds of flu. One of the problems in this dataset is the high quantity of missing values in almost all the features, this situation limits the obtaining of reliable results.
 
 
-Dataset description
+**Dataset description**
 
 A vaccine for the H1N1 flu virus became publicly available in October 2009. In late 2009 and early 2010, the United States conducted the National 2009 H1N1 Flu Survey. This phone survey asked respondents whether they had received the H1N1 and seasonal flu vaccines, in conjunction with questions about themselves. These additional questions covered their social, economic, and demographic background, opinions on risks of illness and vaccine effectiveness, and behaviors towards mitigating transmission. A better understanding of how these characteristics are associated with personal vaccination patterns can provide guidance for future public health efforts [1].
 
 
-Exploratory Data Analysis
+**Exploratory Data Analysis**
 
 The exploratory data analysis was performed by analyzing the context of the problem and the characteristics of the variables as observed in the directory of the project, in this case “Exploration.ipynb” in the notebooks directory of the project.
-
 
 Starting with the feature label corresponding to two targets “h1n1_vaccine” and “seasonal_vaccine”, each one with two possible values “0” or “1”. It had been observed that  the features h1n1_vaccine is imbalanced, and the other one seasonal_vaccine is balanced.
 
@@ -34,19 +33,19 @@ It is important to mention that, in general, there are lots of features that do 
 The following features are related to some general characteristics of people behavior, like the use of face mask, the avoidance of large gatherings, touching face, if the person is a health worker, etc. All of them are binary features that are, kind of balanced, then it did not need any further processing.
 
 
-•	behavioral_antiviral_meds 
-•	behavioral_avoidance 
-•	behavioral_face_mask 
-•	behavioral_wash_hands 
-•	behavioral_large_gatherings 
-•	behavioral_outside_home 
-•	behavioral_touch_face 
-•	doctor_recc_h1n1 
-•	doctor_recc_seasonal 
-•	chronic_med_condition 
-•	child_under_6_months 
-•	health_worker 
-•	health_insurance 
+* behavioral_antiviral_meds 
+* behavioral_avoidance 
+* behavioral_face_mask 
+* behavioral_wash_hands 
+* behavioral_large_gatherings 
+* behavioral_outside_home 
+* behavioral_touch_face 
+* doctor_recc_h1n1 
+* doctor_recc_seasonal 
+* chronic_med_condition 
+* child_under_6_months 
+* health_worker 
+* health_insurance 
 
 
 A couple of interesting features are related to people concern and knowledge about these kinds of flu, the following are the features:
@@ -86,26 +85,21 @@ The following features are related to demographic information, most of these fea
 A correlation analysis had been done for continuous and categorical features, in both cases there were not found any high correlation to get rid of some features.
 
 
-Performance Metric
+**Performance Metric**
 
 The performance metric is evaluated using the area under the receiver operating characteristic curve (ROC AUC) for each of the two target variables. In the case of the feature h1n1_vaccine was imbalanced that is why some preprocessing to balance this feature had been done.
 
 
-
-
-
-
-
-Modeling
+**Modeling**
 
 The dataset had been divided according to the two targets it has, every technique used was applied to the same dataset using target h1n1_vaccine and then season_vaccine. The analysis had included the use blending and stacking process to try different options to get good results. Also, grid search had been used for hyperparameter tuning. It had been a “Trial an error” process for identifying good combinations of techniques and processes that generate great predictions.
 
 
-Prediction Results
+**Prediction Results**
 
 The characteristic of the dataset having two targets needed a processing to get together both prediction for the submission. The project had been built in python using vscode®, and submitted to Data Driven®, getting a result of 0.8426 that is among 14% of the ranking. 
 
-Bibliography
+**Bibliography**
 
 [1] https://www.drivendata.org/competitions/66/flu-shot-learning/page/210/
 
