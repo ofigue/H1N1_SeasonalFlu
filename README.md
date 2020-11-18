@@ -33,19 +33,19 @@ It is important to mention that, in general, there are lots of features that do 
 The following features are related to some general characteristics of people behavior, like the use of face mask, the avoidance of large gatherings, touching face, if the person is a health worker, etc. All of them are binary features that are, kind of balanced, then it did not need any further processing.
 
 
-* behavioral_antiviral_meds 
-* behavioral_avoidance 
-* behavioral_face_mask 
-* behavioral_wash_hands 
-* behavioral_large_gatherings 
-* behavioral_outside_home 
-* behavioral_touch_face 
-* doctor_recc_h1n1 
-* doctor_recc_seasonal 
-* chronic_med_condition 
-* child_under_6_months 
-* health_worker 
-* health_insurance 
+* *behavioral_antiviral_meds*
+* *behavioral_avoidance*
+* *behavioral_face_mask*
+* *behavioral_wash_hands* 
+* *behavioral_large_gatherings* 
+* *behavioral_outside_home*
+* *behavioral_touch_face*
+* *doctor_recc_h1n1*
+* *doctor_recc_seasonal*
+* *chronic_med_condition*
+* *child_under_6_months*
+* *health_worker*
+* *health_insurance*
 
 
 A couple of interesting features are related to people concern and knowledge about these kinds of flu, the following are the features:
