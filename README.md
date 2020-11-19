@@ -24,7 +24,7 @@ A vaccine for the H1N1 flu virus became publicly available in October 2009. In l
 
 The exploratory data analysis was performed by analyzing the context of the problem and the characteristics of the variables as observed in the directory of the project, in this case “Exploration.ipynb” in the notebooks directory of the project.
 
-Starting with the feature label corresponding to two targets “h1n1_vaccine” and “seasonal_vaccine”, each one with two possible values “0” or “1”. It had been observed that  the features h1n1_vaccine is imbalanced, and the other one seasonal_vaccine is balanced.
+Starting with the feature label corresponding to two targets *h1n1_vaccine* and *seasonal_vaccine*, each one with two possible values “0” or “1”. It had been observed that  the features h1n1_vaccine is imbalanced, and the other one seasonal_vaccine is balanced.
 
 It had been mentioned above that this data may be divided in a survey information, demographics and some information related to the use of face mask, frequently washing hands, people contact. Etc. The exploratory analysis will consider the mentioned division.
 
@@ -50,36 +50,36 @@ The following features are related to some general characteristics of people beh
 
 A couple of interesting features are related to people concern and knowledge about these kinds of flu, the following are the features:
 
-•	h1n1_concern 
-•	h1n1_knowledge 
+* *h1n1_concern*
+* *h1n1_knowledge*
 
 
 The following features are related to the mentioned survey that took place. These features obtain the perceptions of the people about some relevant aspects. In all these cases there is a response option graded, in general, from high to low. There were also not found feature distributions that need any further processing.
 
 
-•	opinion_h1n1_vacc_effective 
-•	opinion_h1n1_risk 
-•	opinion_h1n1_sick_from_vacc 
-•	opinion_seas_vacc_effective 
-•	opinion_seas_risk 
-•	opinion_seas_sick_from_vacc 
+* *opinion_h1n1_vacc_effective*
+* *opinion_h1n1_risk*
+* *opinion_h1n1_sick_from_vacc*
+* *opinion_seas_vacc_effective*
+* *opinion_seas_risk*
+* *opinion_seas_sick_from_vacc*
 
 
 The following features are related to demographic information, most of these features are categorical, in this case, it had been used one hot encoding for the processing, which needed to change some of those features values not to have spaces in them. 
 
 
-•	age_group 
-•	education 
-•	race 
-•	sex 
-•	income_poverty 
-•	marital_status 
-•	rent_or_own 
-•	employment_status 
-•	household_adults 
-•	household_children 
-•	employment_industry 
-•	employment_occupation 
+* *age_group*
+* *education*
+* *race*
+* *sex*
+* *income_poverty*
+* *marital_status*
+* *rent_or_own*
+* *employment_status*
+* *household_adults*
+* *household_children*
+* *employment_industry*
+* *employment_occupation*
 
 
 A correlation analysis had been done for continuous and categorical features, in both cases there were not found any high correlation to get rid of some features.
@@ -87,7 +87,7 @@ A correlation analysis had been done for continuous and categorical features, in
 
 **Performance Metric**
 
-The performance metric is evaluated using the area under the receiver operating characteristic curve (ROC AUC) for each of the two target variables. In the case of the feature h1n1_vaccine was imbalanced that is why some preprocessing to balance this feature had been done.
+The performance metric is evaluated using the area under the receiver operating characteristic curve (ROC AUC) for each of the two target variables. In the case of the feature *h1n1_vaccine* was imbalanced that is why some preprocessing to balance this feature had been done.
 
 
 **Modeling**
